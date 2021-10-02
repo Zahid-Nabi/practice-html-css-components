@@ -1,0 +1,57 @@
+html {
+    font-size: 62.5%;
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 1.6rem;
+}
+.appointment-section {
+    position: relative;
+}
+.section-bg {
+    background: url('../images/bg.jpg') no-repeat center center / cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 60%;
+    z-index: -1;
+}
+.section-bg::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(17, 138, 108, 0.9);
+}
+.contact-form {
+    padding: 50px 0;
+}
+.form-title {
+    color: #fff;
+    font-size: 50px;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    color: #888;
+    border: none;
+    margin: 10px;
+}
+
+.btn-regular {
+    border: none;
+    padding: 10px 30px;
+    color: rgb(17, 138, 108);
+    font-weight: bold;
+}
+.appointment-text {
+    padding-left: 100px;
+}
