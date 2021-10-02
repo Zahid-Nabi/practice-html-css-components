@@ -11,9 +11,10 @@ body {
 }
 .appointment-section {
     position: relative;
+    padding: 50px 0;
 }
 .section-bg {
-    background: url('../images/bg.jpg') no-repeat center center / cover;
+    background: url('./images/bg.jpg') no-repeat center center / cover;
     position: absolute;
     left: 0;
     top: 0;
@@ -31,11 +32,17 @@ body {
     background: rgba(17, 138, 108, 0.9);
 }
 .contact-form {
-    padding: 50px 0;
+    position: relative;
 }
 .form-title {
     color: #fff;
     font-size: 50px;
+    writing-mode: vertical-lr;
+    position: absolute;
+    left: -70px;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    opacity: 0.4;
 }
 .contact-form input,
 .contact-form textarea {
@@ -44,6 +51,7 @@ body {
     color: #888;
     border: none;
     margin: 10px;
+    border-radius: 5px;
 }
 
 .btn-regular {
@@ -51,7 +59,33 @@ body {
     padding: 10px 30px;
     color: rgb(17, 138, 108);
     font-weight: bold;
+    margin-left: 10px;
+    border-radius: 5px;
 }
 .appointment-text {
     padding-left: 100px;
+}
+
+.appointment-text h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 35px;
+}
+.appointment-text ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.appointment-text ul li {
+    line-height: 3;
+    color: #777;
+}
+.appointment-text ul li i {
+    margin-right: 10px;
+    color: rgb(17, 138, 108);
+}
+.btn-colored {
+    margin-left: 0;
+    background: rgb(17, 138, 108);
+    color: #fff;
 }
