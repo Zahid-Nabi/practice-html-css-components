@@ -1,0 +1,45 @@
+html {
+    font-size: 62.5%;
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.not-found {
+    background: #74b9ff;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.not-found .title {
+    font-size: 4rem;
+    margin-bottom: 50px;
+    color: #3f3d56;
+}
+.not-found img {
+    width: 500px;
+    max-width: 75%;
+}
+.not-found .info {
+    font-size: 2rem;
+    margin: 30px 0;
+}
+.not-found .go-home-btn {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    background: #6c63ff;
+    color: #fff;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
